@@ -1,0 +1,61 @@
+https://realpython.com/python-classes/
+---------------------------------------------------
+#You can think of a class as a piece of code that specifies the data and behavior that represent and model a particular type of object.
+#A common analogy is that a class is like the blueprint for a house. You can use the blueprint to create several houses and even a complete neighborhood.
+ Each concrete house is an object or instance that’s derived from the blueprint.
+#Each instance can have its own properties, such as color, owner, and interior design. (object state)
+Instances can also have different behaviors, such as locking the doors and windows, opening the garage door, turning the lights on and off, watering the garden
+#member of class(object) is attributes and methods
+#you can use classes to create objects that emulate people, animals, vehicles, books, buildings, cars, or other objects.
+ You can also model virtual objects, such as a web server, directory tree, chatbot, file manager, and more.
+#The .__init__() method has a special meaning in Python classes. 
+This method is known as the object initializer because it defines and sets the initial values for your attributes.
+#The action of creating concrete objects from an existing class is known as instantiation. With every instantiation, you create a new object of the target class. 
+#To create an object of a Python class like Circle, you must call the Circle() class constructor with a pair of parentheses and a set of appropriate arguments.
+#In Python, the class constructor accepts the same arguments as the .__init__() method.
+# you can access the attributes and methods of an object by using dot notation with the dot operator : obj.attribute_name, obj.method_name()
+#use dot notation and an assignment statement to change the current value of an attribute
+#Most Python programmers follow the snake_case naming convention, which involves using underscores (_) to separate multiple words. However,
+ the recommended naming convention for Python classes is the PascalCase, where each word is capitalized.
+#The naming convention consists of adding a leading underscore to the member’s name. So, in a Python class:
+Member		Naming					Examples
+Public		Use the normal naming pattern.		radius, calculate_area()
+Non-public	Include a leading underscore in names.	_radius, _calculate_area()
+#Public members are part of the official interface or API of your classes, while non-public members aren’t intended to be part of that API.
+ This means that you shouldn’t use non-public members outside their defining class.
+#It’s important to note that the second naming convention only indicates that the attribute isn’t intended to be used directly from outside the containing class.
+ It doesn’t prevent direct access
+#n most cases, attributes should be non-public to guarantee the safe use of your classes.
+ A good approach will be to start with all your attributes as non-public and only make them public if real use cases appear.
+#Another naming convention that you can see and use in Python classes is to add two leading underscores to attribute and method names.
+ This naming convention triggers what’s known as name mangling.
+#benefit of classes:Model and solve complex real-world problems,Reuse code and avoid repetition,
+Encapsulate related data and behaviors in a single entity,Abstract away the implementation details of concepts and objects,
+Unlock polymorphism with common interfaces
+#Python classes can help you write more organized, structured, maintainable, reusable, flexible, and user-friendly code
+#sometimes using a class isn’t the best solution. Sometimes a couple of functions are enough.
+#Data classes, enumerations, and named tuples are specially designed to store data. So, they might be the best solution 
+if your class doesn’t have any behavior attached.
+#f your class has a single method in its API, then you may not require a class. Instead, 
+use a function unless you need to retain a certain state between calls.
+#***classes are great when you must bundle data and behavior together in a single entity***
+###Atributes:
+#Class attributes: A class attribute is a variable that you define in the class body directly. Class attributes belong to their containing class.
+ Their data is common to the class and all its instances.
+#Instance attributes: An instance is a variable that you define inside a method. Instance attributes belong to a concrete instance of a given class.
+ Their data is only available to that instance and defines its state.
+#You can’t modify class attributes through instances of the containing class. 
+Doing that will create new instance attributes with the same name as the original class attributes. 
+#you should use class attributes for sharing data between instances of a class. Any changes on a class attribute will be visible to all the instances of that class.
+#Instance Attributes:Instance attributes are variables tied to a particular object of a given class. 
+The value of an instance attribute is attached to the object itself.
+#Unlike class attributes, you can’t access instance attributes through the class. You need to access them through their containing instance
+#special attribute called .__dict__. This attribute holds a dictionary containing the writable members of the underlying class or instance.
+#you can add new attributes to your classes and instances dynamically. you can take advantage of this Python feature when you don’t know the 
+required attributes of a given class at the time when you’re defining that class itself.
+## property and descriptor-based attribute:Python allows you to add function-like behavior on top of existing instance attributes and
+ turn them into managed attributes.
+ # with managed attributes, you can have function-like behavior and attribute-like access at the same time.
+ # To create a managed attribute with function-like behavior in Python, you can use either a property or a descriptor, 
+ depending on your specific needs.
+ 
