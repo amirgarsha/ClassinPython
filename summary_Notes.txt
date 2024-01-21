@@ -58,4 +58,16 @@ required attributes of a given class at the time when you’re defining that cla
  # with managed attributes, you can have function-like behavior and attribute-like access at the same time.
  # To create a managed attribute with function-like behavior in Python, you can use either a property or a descriptor, 
  depending on your specific needs.
- 
+ #light weight class : with __slot__ the memory for instance of a class is so smaller than regular instance.
+ # This attribute prevents the automatic creation of an instance .__dict__.
+ # The .__slots__ attribute adds a second interesting behavior to your custom classes. It prevents you from 
+ adding new instance attributes dynamically
+ # You’ll use the data to define the object’s current state and the methods to operate on that data or state.
+ #in a Python class, you can define three different types of methods
+ ## Instance methods, which take the current instance, self, as their first argument
+ ## Class methods, which take the current class, cls, as their first argument
+ ## Static methods, which take neither the class nor the instance
+ #Instance Methods With self: The self argument holds a reference to the current instance, allowing you to access that 
+ instance from within methods. 
+ #Special Methods and Protocols
+
