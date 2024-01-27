@@ -69,5 +69,21 @@ required attributes of a given class at the time when you’re defining that cla
  ## Static methods, which take neither the class nor the instance
  #Instance Methods With self: The self argument holds a reference to the current instance, allowing you to access that 
  instance from within methods. 
- #Special Methods and Protocols
-
+ #Special Methods and Protocols:
+ #Python supports what it calls special methods, which are also known as dunder or magic methods.
+ #These methods are typically instance methods, and they’re a fundamental part of Python’s internal class mechanism
+ # Python calls them automatically in response to specific operations.
+ #For example, the .__str__() and .__repr__() methods provide string representations for your objects.
+ #The .__str__() method provides what’s known as the informal string representation of an object. This method must 
+ return a string that represents the object in a user-friendly manner.
+ #A class method is a method that takes the class object as its first argument instead of taking self.
+ #You can create class methods using the @classmethod decorator
+ #Your Python classes can also have static methods.
+ #they’re regular functions defined within a class. You could’ve also defined them 
+ outside the class as stand-alone function.
+ #You’ll typically define a static method instead of a regular function outside the class 
+ when that function is closely related to your class,and you want to bundle it together for 
+ convenience or for consistency with your code’s API.
+ #Remember that calling a function is a bit different from calling a method. To call a method, 
+ you need to specify a class or object that provides that method.
+ 
