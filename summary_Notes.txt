@@ -86,4 +86,7 @@ required attributes of a given class at the time when you’re defining that cla
  convenience or for consistency with your code’s API.
  #Remember that calling a function is a bit different from calling a method. To call a method, 
  you need to specify a class or object that provides that method.
- 
+ #Getter and Setter Methods vs Properties:
+ #Using methods to access and update attributes promotes encapsulation. Encapsulation is a fundamental OOP principle
+  that recommends protecting an object’s state or data from the outside world, preventing direct access.
+ #
