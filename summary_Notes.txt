@@ -91,4 +91,9 @@ required attributes of a given class at the time when you’re defining that cla
  #Getter and Setter Methods vs Properties:
  #Using methods to access and update attributes promotes encapsulation. Encapsulation is a fundamental OOP principle
   that recommends protecting an object’s state or data from the outside world, preventing direct access.
- #
+ #special class:
+ #if you want a tool that saves you from writing a lot of class-related boilerplate code, then you can take advantage of 
+ data classes and the dataclasses module.
+#if you’re looking for a tool that allows you to quickly create class-based enumerations of constants,
+ then you can turn your eye to the enum module and its different types of enumeration classes.
+ #Python’s data classes specialize in storing data.
